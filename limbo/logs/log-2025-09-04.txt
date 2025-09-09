@@ -1,0 +1,20 @@
+11:56:24.764 INFO  Limbo -- Starting server...
+11:56:27.667 INFO  Limbo -- Server started on localhost/127.0.0.1:25566
+11:57:21.053 INFO  Limbo -- Player syncronized connected (/127.0.0.1:41918) [V1_12_2]
+11:57:51.248 INFO  Limbo -- Player syncronized disconnected
+11:59:42.339 INFO  Limbo -- Player syncronized connected (/127.0.0.1:41308) [V1_12_2]
+12:00:19.751 INFO  Limbo -- Player syncronized disconnected
+12:01:19.912 INFO  Limbo -- Player syncronized connected (/127.0.0.1:52656) [V1_12_2]
+12:01:23.704 INFO  Limbo -- Player syncronized disconnected
+13:59:03.320 INFO  Limbo -- Player syncronized connected (/127.0.0.1:33258) [V1_12_2]
+13:59:07.061 INFO  Limbo -- Player syncronized disconnected
+14:06:07.568 INFO  Limbo -- Stopping server...
+14:06:07.569 INFO  Limbo -- Server stopped, Goodbye!
+14:09:08.928 INFO  Limbo -- Starting server...
+14:09:09.710 INFO  Limbo -- Server started on localhost/127.0.0.1:25566
+14:12:50.383 INFO  Limbo -- Player syncronized connected (/127.0.0.1:52278) [V1_12_2]
+14:12:55.053 INFO  Limbo -- Player syncronized disconnected
+21:11:01.141 INFO  Limbo -- Player syncronized connected (/127.0.0.1:45166) [V1_12_2]
+21:11:05.158 INFO  Limbo -- Player syncronized disconnected
+22:10:11.702 INFO  Limbo -- Player syncronized connected (/127.0.0.1:36568) [V1_12_2]
+22:10:11.799 INFO  Limbo -- Player syncronized disconnected

@@ -1,0 +1,47 @@
+[2025/09/09 15:56:12]: §9          __             _       
+[2025/09/09 15:56:12]: §9  _ __   / /  ___   __ _(_)_ __  
+[2025/09/09 15:56:12]: §9 | '_ \ / /  / _ \ / _` | | '_ \ 
+[2025/09/09 15:56:12]: §9 | | | / /__| (_) | (_| | | | | |
+[2025/09/09 15:56:12]: §9 |_| |_\____/\___/ \__, |_|_| |_|
+[2025/09/09 15:56:12]: §9                  |___/            
+[2025/09/09 15:56:12]: §9 By: www.nickuc.com - V 10.4.23 DEVELOPMENT
+[2025/09/09 15:56:12]: §9 
+[2025/09/09 15:56:13]: §3[nLogin] [DEBUG] All settings were loaded in 318 ms.
+[2025/09/09 15:56:13]: §3[nLogin] [DEBUG] Loading the messages_en.yml message file...
+[2025/09/09 15:56:13]: §3[nLogin] [DEBUG] All plugin messages were loaded in 185 ms (languageByClient=false).
+[2025/09/09 15:56:13]: §3[nLogin] [DEBUG] All proxy settings were loaded in 14 ms.
+[2025/09/09 15:56:13]: §3[nLogin] [DEBUG] Loading database...
+[2025/09/09 15:56:14]: §3[nLogin] [DEBUG] Starting logger filter...
+[2025/09/09 15:56:19]: 
+[2025/09/09 15:56:19]:  §bThank you so much for choosing nLogin! §4<3
+[2025/09/09 15:56:19]: 
+[2025/09/09 15:56:19]:  §4For your safety, please read the message below:
+[2025/09/09 15:56:19]:   §cNever download nLogin from unknown sources.
+[2025/09/09 15:56:19]:   §cA modified version may contain malicious software.
+[2025/09/09 15:56:19]: 
+[2025/09/09 15:56:19]:  §3Trusted sources:
+[2025/09/09 15:56:19]:   §bwww.nickuc.com
+[2025/09/09 15:56:19]:   §bwww.github.com/nickuc
+[2025/09/09 15:56:19]:   §bOpeNLogin installer (from Spigot or GitHub)
+[2025/09/09 15:56:19]: 
+[2025/09/09 15:56:19]:  §3Official support channels:
+[2025/09/09 15:56:19]:   §bDiscord group: §fwww.nickuc.com/discord
+[2025/09/09 15:56:19]:   §bDocumentation: §fdocs.nickuc.com/nlogin/
+[2025/09/09 15:56:19]:   §bEmail: §fsupport@nickuc.com
+[2025/09/09 15:56:19]:   §bYouTube: §fyoutube.com/nickuc
+[2025/09/09 15:56:19]: 
+[2025/09/09 15:56:19]:  §eTo remove this warning, log in with "nlogin.admin" permission on the server
+[2025/09/09 15:56:19]:  §eand click the "Setup plugin" button to configure your plugin.
+[2025/09/09 15:56:19]: 
+[2025/09/09 15:56:40]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'syncronized', `unique_id` = 4fa24d66b50b3b99963741e1e51e18ff,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$ElvLKMqZFRz.10B5QLOq8u.4IUvWPf8nyjrQIWTqigNb1mQzHSNca', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2025-09-03 11:52:10.753, `last_seen` = 2025-09-09 15:56:40.778, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 2" (applied to [last_ip, last_seen, settings] columns)
+[2025/09/09 15:56:40]: [nLogin] The user syncronized has successfully logged in.
+[2025/09/09 16:10:08]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'syncronized', `unique_id` = 4fa24d66b50b3b99963741e1e51e18ff,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$ElvLKMqZFRz.10B5QLOq8u.4IUvWPf8nyjrQIWTqigNb1mQzHSNca', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2025-09-03 11:52:10.753, `last_seen` = 2025-09-09 16:10:08.047, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 2" (applied to [last_seen, settings] columns)
+[2025/09/09 16:14:43]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'syncronized', `unique_id` = 4fa24d66b50b3b99963741e1e51e18ff,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$ElvLKMqZFRz.10B5QLOq8u.4IUvWPf8nyjrQIWTqigNb1mQzHSNca', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2025-09-03 11:52:10.753, `last_seen` = 2025-09-09 16:14:43.12, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 2" (applied to [last_ip, last_seen, settings] columns)
+[2025/09/09 16:14:43]: [nLogin] The user syncronized has successfully logged in.
+[2025/09/09 16:17:42]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'syncronized', `unique_id` = 4fa24d66b50b3b99963741e1e51e18ff,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$ElvLKMqZFRz.10B5QLOq8u.4IUvWPf8nyjrQIWTqigNb1mQzHSNca', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2025-09-03 11:52:10.753, `last_seen` = 2025-09-09 16:17:42.076, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 2" (applied to [last_seen, settings] columns)
+[2025/09/09 16:19:46]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'syncronized', `unique_id` = 4fa24d66b50b3b99963741e1e51e18ff,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$ElvLKMqZFRz.10B5QLOq8u.4IUvWPf8nyjrQIWTqigNb1mQzHSNca', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2025-09-03 11:52:10.753, `last_seen` = 2025-09-09 16:19:46.486, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 2" (applied to [last_ip, last_seen, settings] columns)
+[2025/09/09 16:19:46]: [nLogin] The user syncronized has successfully logged in.
+[2025/09/09 16:20:41]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'syncronized', `unique_id` = 4fa24d66b50b3b99963741e1e51e18ff,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$ElvLKMqZFRz.10B5QLOq8u.4IUvWPf8nyjrQIWTqigNb1mQzHSNca', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2025-09-03 11:52:10.753, `last_seen` = 2025-09-09 16:20:41.019, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 2" (applied to [last_seen, settings] columns)
+[2025/09/09 17:09:04]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'syncronized', `unique_id` = 4fa24d66b50b3b99963741e1e51e18ff,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$ElvLKMqZFRz.10B5QLOq8u.4IUvWPf8nyjrQIWTqigNb1mQzHSNca', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2025-09-03 11:52:10.753, `last_seen` = 2025-09-09 17:09:04.469, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 2" (applied to [last_ip, last_seen, settings] columns)
+[2025/09/09 17:09:04]: [nLogin] The user syncronized has successfully logged in.
+[2025/09/09 17:50:42]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'syncronized', `unique_id` = 4fa24d66b50b3b99963741e1e51e18ff,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$ElvLKMqZFRz.10B5QLOq8u.4IUvWPf8nyjrQIWTqigNb1mQzHSNca', `last_ip` = '0:0:0:0:0:0:0:1', `creation_date` = 2025-09-03 11:52:10.753, `last_seen` = 2025-09-09 17:50:42.523, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"survival","key":"last-server"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 2" (applied to [last_seen, settings] columns)

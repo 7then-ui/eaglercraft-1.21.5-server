@@ -1,0 +1,225 @@
+# ═══════════════════════════════════════════════════════════════
+# EnchantLimitRemover Configuration
+# Version: 2.1
+# ═══════════════════════════════════════════════════════════════
+
+# Language setting (available: en, id)
+language: en
+
+# Maximum enchantment level allowed (default: 10)
+# This is the base maximum level for all players
+max-enchant-level: 10
+
+# Maximum enchantment level by permission
+# Players need elr.level.<number> permission
+# For example, elr.level.20 allows up to level 20 enchantments
+# The plugin will check from highest to lowest permission
+use-permission-levels: true
+
+# List of disabled enchantments (use lowercase minecraft names)
+# Example: [curse_of_vanishing, curse_of_binding, channeling]
+disabled-enchantments: []
+
+# Whether to show enchantment messages to players
+show-messages: true
+
+# Debug mode (prints more information to console)
+debug: false
+
+# Check for updates on server startup
+check-for-updates: true
+
+# ═══════════════════════════════════════════════════════════════
+# ECONOMY SETTINGS
+# ═══════════════════════════════════════════════════════════════
+economy:
+  # Enable economy integration (requires Vault)
+  enabled: false
+  # Cost per level of enchantment
+  cost-per-level: 100.0
+  # Use items instead of Vault economy
+  use-item-economy: false
+  item:
+    # Material to use as currency
+    material: DIAMOND
+    # Material value (cost multiplier)
+    value: 1.0
+
+# ═══════════════════════════════════════════════════════════════
+# COOLDOWN SETTINGS
+# ═══════════════════════════════════════════════════════════════
+cooldowns:
+  # Enable command cooldowns
+  enabled: false
+  # Cooldown duration in seconds
+  duration: 60
+  # Bypass cooldown permission: elr.bypass.cooldown
+
+# ═══════════════════════════════════════════════════════════════
+# ITEM-SPECIFIC ENCHANTMENT LIMITS
+# ═══════════════════════════════════════════════════════════════
+item-specific-limits:
+  # Enable item-specific enchantment limits
+  enabled: false
+  items:
+    # Example configurations
+    DIAMOND_SWORD:
+      sharpness: 10
+      looting: 5
+      unbreaking: 5
+    NETHERITE_PICKAXE:
+      efficiency: 10
+      fortune: 5
+      unbreaking: 5
+    DIAMOND_HELMET:
+      protection: 8
+      respiration: 5
+      aqua_affinity: 1
+    DIAMOND_CHESTPLATE:
+      protection: 8
+      thorns: 5
+    DIAMOND_LEGGINGS:
+      protection: 8
+      swift_sneak: 3
+    DIAMOND_BOOTS:
+      protection: 8
+      feather_falling: 10
+      depth_strider: 3
+    BOW:
+      power: 10
+      punch: 3
+      flame: 1
+      infinity: 1
+    CROSSBOW:
+      quick_charge: 5
+      multishot: 1
+      piercing: 10
+    TRIDENT:
+      impaling: 10
+      loyalty: 5
+      riptide: 5
+      channeling: 1
+    FISHING_ROD:
+      luck_of_the_sea: 5
+      lure: 5
+      unbreaking: 5
+
+# ═══════════════════════════════════════════════════════════════
+# ADVANCED SETTINGS
+# ═══════════════════════════════════════════════════════════════
+
+# Enchantment table behavior
+enchanting-table:
+  # Allow enchanting books to enchanted books (fixes the main bug)
+  fix-book-enchanting: true
+  # Consume experience and lapis normally
+  consume-resources: true
+  # Show enhanced enchantment options
+  enhanced-options: true
+
+# Security settings
+security:
+  # Maximum allowed enchantment level globally (hard limit)
+  absolute-max-level: 1000
+  # Log all enchantment activities
+  log-activities: true
+  # Prevent enchantment stacking exploits
+  prevent-exploits: true
+
+# Performance settings
+performance:
+  # Cache enchantment checks
+  cache-checks: true
+  # Async processing for heavy operations
+  async-processing: false
+
+# ═══════════════════════════════════════════════════════════════
+# CUSTOM ENCHANTMENTS (Future Feature)
+# ═══════════════════════════════════════════════════════════════
+custom-enchantments:
+  # Enable custom enchantments
+  enabled: false
+  
+  # Custom enchantment definitions
+  telekinesis:
+    name: "Telekinesis"
+    max-level: 1
+    target: ALL
+    treasure: false
+    cursed: false
+    conflicts: []
+    description: "Items and XP go directly to your inventory"
+    particle:
+      type: PORTAL
+      count: 10
+      offset-x: 0.2
+      offset-y: 0.2
+      offset-z: 0.2
+      speed: 0.1
+      force: false
+  
+  soulbound:
+    name: "Soulbound"
+    max-level: 1
+    target: ALL
+    treasure: true
+    cursed: false
+    conflicts: []
+    description: "Keep this item on death"
+    particle:
+      type: SOUL
+      count: 5
+      offset-x: 0.1
+      offset-y: 0.1
+      offset-z: 0.1
+      speed: 0.05
+      force: false
+  
+  vein_miner:
+    name: "Vein Miner"
+    max-level: 3
+    target: TOOL
+    treasure: false
+    cursed: false
+    conflicts: [fortune]
+    description: "Mine blocks in veins"
+    particle:
+      type: BLOCK_CRACK
+      count: 15
+      offset-x: 0.3
+      offset-y: 0.3
+      offset-z: 0.3
+      speed: 0.1
+      force: false
+
+# ═══════════════════════════════════════════════════════════════
+# MESSAGES AND LOCALIZATION
+# ═══════════════════════════════════════════════════════════════
+messages:
+  # Prefix for all plugin messages
+  prefix: "§6[§eELR§6] "
+  
+  # Success messages
+  enchant-added: "§aSuccessfully added §e{enchantment} {level} §ato item!"
+  enchant-removed: "§aSuccessfully removed §e{enchantment} §afrom item!"
+  enchants-cleared: "§aAll enchantments removed from item!"
+  config-reloaded: "§aPlugin configuration reloaded successfully!"
+  
+  # Error messages
+  no-permission: "§cYou don't have permission to use this command!"
+  no-item: "§cYou must hold an item in your main hand!"
+  invalid-enchant: "§cInvalid enchantment name! Use /elrenchant list to see available enchantments."
+  invalid-level: "§cInvalid level number! Please enter a valid integer."
+  level-too-high: "§cMaximum enchantment level for you is {max-level}!"
+  enchant-disabled: "§cThis enchantment is disabled!"
+  cooldown-active: "§cYou must wait {time} seconds before using this command again!"
+  
+  # Info messages
+  max-level-limited: "§6Enchantment level limited to {level} for {enchantment}"
+  item-enchanted: "§aItem successfully enchanted!"
+
+# ═══════════════════════════════════════════════════════════════
+# DO NOT MODIFY BELOW (Internal Settings)
+# ═══════════════════════════════════════════════════════════════
+config-version: 2
+last-updated: "2025-06-07"

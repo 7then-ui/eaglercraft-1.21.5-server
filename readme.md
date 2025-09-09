@@ -1,4 +1,4 @@
-Hello! this is a thing made by wadwdwd (discord) wadwdwd1 on github!
+<!-- Hello! this is a thing made by wadwdwd (discord) wadwdwd1 on github! -->
 
 
 for questions/support

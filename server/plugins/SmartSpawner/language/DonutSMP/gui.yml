@@ -1,0 +1,330 @@
+# ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+#   ███████╗███╗   ███╗ █████╗ ██████╗ ████████╗███████╗██████╗  █████╗ ██╗    ██╗███╗   ██╗███████╗██████╗
+#   ██╔════╝████╗ ████║██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██║    ██║████╗  ██║██╔════╝██╔══██╗
+#   ███████╗██╔████╔██║███████║██████╔╝   ██║   ███████╗██████╔╝███████║██║ █╗ ██║██╔██╗ ██║█████╗  ██████╔╝
+#   ╚════██║██║╚██╔╝██║██╔══██║██╔══██╗   ██║   ╚════██║██╔═══╝ ██╔══██║██║███╗██║██║╚██╗██║██╔══╝  ██╔══██╗
+#   ███████║██║ ╚═╝ ██║██║  ██║██║  ██║   ██║   ███████║██║     ██║  ██║╚███╔███╔╝██║ ╚████║███████╗██║  ██║
+#   ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
+# ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
+#
+#   OVERVIEW:
+#   This file contains the GUI language settings for the Spawner plugin.
+#   It defines the appearance and behavior of various GUI elements, including
+#   buttons, item names, and lore. The settings are organized into sections
+#   for different GUI components, such as the main GUI, spawner stacker GUI,
+#   spawner storage GUI, and list command GUIs.
+
+# ---------------------------------------------------
+#                  Main GUI
+# ---------------------------------------------------
+gui_title_main:
+  single_spawner: '&#545454%ᴇɴᴛɪᴛʏ% ꜱᴘᴀᴡɴᴇʀ'
+  stacked_spawner: '&#545454%amount% %ᴇɴᴛɪᴛʏ% ꜱᴘᴀᴡɴᴇʀ'
+
+spawner_storage_item:
+  name: '&#F97603sᴘᴀᴡɴᴇʀ sᴛᴏʀᴀɢᴇ'
+  lore:
+    - '%loot_items%'
+  loot_items: '&#F97603%amount% &f%ɪᴛᴇᴍ_ɴᴀᴍᴇ%'
+  loot_items_empty: '&#e6e6faɴᴏ ɪᴛᴇᴍ ᴅʀᴏᴘs'
+
+spawner_info_item:
+  name: '&#FCE300%stack_size% %ᴇɴᴛɪᴛʏ% ꜱᴘᴀᴡɴᴇʀ'
+  lore:
+    - '&#FCE300● &fClick to sell items and collect xp'
+    - '&#FCE300Storage:&f %formatted_storage%% &#FCE300Filled.'
+    - '&#FCE300Exp:&f %formatted_exp%% &#FCE300Stored.'
+  lore_no_shop:
+    - '&#FCE300● &fClick to collect xp'
+    - '&#FCE300Storage:&f %formatted_storage%% &#FCE300Filled.'
+    - '&#FCE300Exp:&f %formatted_exp%% &#FCE300Stored.'
+  lore_full: ''
+  lore_inactive: ''
+
+exp_info_item:
+  name: '&#7AFC00ᴄᴏʟʟᴇᴄᴛ ᴇxᴘ'
+  lore:
+    - '&#7AFC00%raw_current_exp% &fXP Points'
+
+# ---------------------------------------------------
+#              Spawner Stacker GUI
+# ---------------------------------------------------
+gui_title_stacker: ꜱᴘᴀᴡɴᴇʀ ꜱᴛᴀᴄᴋᴇʀ
+
+button_spawner:
+  name: '&#ab7afd%ᴇɴᴛɪᴛʏ% ꜱᴘᴀᴡɴᴇʀ'
+  lore:
+    - ''
+    - '&#7b68ee◈ &#a885fcꜱᴛᴀᴄᴋ ɪɴꜰᴏ:'
+    - '  &#f8f8ff•  ᴄᴜʀʀᴇɴᴛ: &#c2a8fc%stack_size%'
+    - '  &#f8f8ff•  ᴍᴀx: &#c2a8fc%max_stack_size%'
+    - ''
+    - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ʀᴇᴛᴜʀɴ ᴛᴏ ꜱᴘᴀᴡɴᴇʀ ᴍᴇɴᴜ'
+
+button_remove:
+  name: '&#ff5252-%amount% ꜱᴘᴀᴡɴᴇʀ%plural%'
+  lore:
+    - ''
+    - '&#e63939◈ &#ff7070ᴀᴄᴛɪᴏɴ:'
+    - '  &#f8f8ff•  ʀᴇᴍᴏᴠᴇ: &#ff5252%amount% &#e63939ꜱᴘᴀᴡɴᴇʀ%plural%'
+    - '  &#f8f8ff•  ᴄᴜʀʀᴇɴᴛ: &#ff5252%stack_size%'
+    - ''
+    - '&#e63939⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ʀᴇᴍᴏᴠᴇ ꜰʀᴏᴍ ꜱᴛᴀᴄᴋ'
+
+button_add:
+  name: '&#37eb9a+%amount% ꜱᴘᴀᴡɴᴇʀ%plural%'
+  lore:
+    - ''
+    - '&#2cc483◈ &#48e89bᴀᴄᴛɪᴏɴ:'
+    - '  &#f8f8ff•  ᴀᴅᴅ: &#37eb9a%amount% &#2cc483ꜱᴘᴀᴡɴᴇʀ%plural%'
+    - '  &#f8f8ff•  ᴄᴜʀʀᴇɴᴛ: &#37eb9a%stack_size%'
+    - ''
+    - '&#2cc483⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ᴛᴏ ꜱᴛᴀᴄᴋ'
+
+# ---------------------------------------------------
+#             Spawner Storage GUI
+# ---------------------------------------------------
+gui_title_storage: "&#545454ꜱᴘᴀᴡɴᴇʀ ꜱᴛᴏʀᴀɢᴇ"
+
+navigation_button_previous:
+  name: '&#7AFC00ᴘʀᴇᴠɪᴏᴜꜱ'
+  lore:
+    - '&fClick to go back a page'
+
+navigation_button_next:
+  name: '&#7AFC00ɴᴇxᴛ'
+  lore:
+    - '&fClick to go forward a page'
+
+shop_page_indicator:
+  name: '&#00F986ꜱᴇʟʟ ᴀʟʟ'
+  lore:
+    - '&fClick to sell all mob drops'
+
+return_button:
+  name: '&#FC0000ʀᴇᴛᴜʀɴ'
+  lore:
+    - '&fClick to return to the main menu'
+
+take_all_button:
+  name: '&#FCE300ᴛᴀᴋᴇ ᴀʟʟ'
+  lore:
+    - '&#FCE300● &fCollect loot from the storage'
+
+item_filter_button:
+  name: '&#7b68eeꜰɪʟᴛᴇʀ ᴅʀᴏᴘꜱ'
+  lore:
+    - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴄᴏɴꜰɪɢᴜʀᴇ'
+
+discard_all_button:
+  name: '&#ff5252ᴅɪꜱᴄᴀʀᴅ ᴀʟʟ ɪᴛᴇᴍꜱ'
+  lore:
+    - '&#e63939⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ &#ff5252ʀᴇᴍᴏᴠᴇ&#f8f8ff ᴀʟʟ ɪᴛᴇᴍꜱ'
+
+drop_page_button:
+  name: '&#00F986ᴅʀᴏᴘ ʟᴏᴏᴛ'
+  lore:
+    - '&fClick to drop all the loot on the page'
+
+# ---------------------------------------------------
+#             Filter Configuration GUI
+# ---------------------------------------------------
+gui_title_filter_config: ꜱᴘᴀᴡɴᴇʀ ɪᴛᴇᴍ ꜰɪʟᴛᴇʀ
+
+filter_divider:
+  name: '&#7b68eeꜰɪʟᴛᴇʀ ɪᴛᴇᴍ ᴅʀᴏᴘꜱ'
+  lore:
+    - ''
+    - '&#f8f8ff⋮ ʟᴇꜰᴛ ꜱɪᴅᴇ: &#37eb9aᴀʟʟᴏᴡᴇᴅ ɪᴛᴇᴍꜱ'
+    - '&#f8f8ff⋮ ʀɪɢʜᴛ ꜱɪᴅᴇ: &#ff5252ʙʟᴏᴄᴋᴇᴅ ɪᴛᴇᴍꜱ'
+    - ''
+    - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ʀᴇᴛᴜʀɴ ᴛᴏ ꜱᴛᴏʀᴀɢᴇ'
+
+filter_item_allowed:
+  name: '&#37eb9a%item_name%'
+  lore:
+    - '&#f8f8ffꜱᴛᴀᴛᴜꜱ: &#37eb9aᴀʟʟᴏᴡᴇᴅ &#f8f8ff- ᴄʟɪᴄᴋ ᴛᴏ ʙʟᴏᴄᴋ'
+
+filter_item_blocked:
+  name: '&#ff5252%item_name%'
+  lore:
+    - '&#f8f8ffꜱᴛᴀᴛᴜꜱ: &#ff5252ʙʟᴏᴄᴋᴇᴅ &#f8f8ff- ᴄʟɪᴄᴋ ᴛᴏ ᴀʟʟᴏᴡ'
+
+# ---------------------------------------------------
+#                List Command GUIs
+# ---------------------------------------------------
+# World Selection GUI
+gui_title_world_selection: ꜱᴇʟᴇᴄᴛ ᴡᴏʀʟᴅ
+
+world_buttons:
+  overworld:
+    name: '&#37eb9aᴏᴠᴇʀᴡᴏʀʟᴅ'
+    lore:
+      - ''
+      - '&#2cc483◈ &#48e89bꜱᴘᴀᴡɴᴇʀꜱ:'
+      - '  &#f8f8ff•  ᴛᴏᴛᴀʟ: &#37eb9a%total%'
+      - '  &#f8f8ff•  ꜱᴛᴀᴄᴋᴇᴅ: &#37eb9a%total_stacked%'
+      - ''
+      - '&#2cc483⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ ꜱᴘᴀᴡɴᴇʀꜱ'
+  nether:
+    name: '&#ff5252ɴᴇᴛʜᴇʀ'
+    lore:
+      - ''
+      - '&#e63939◈ &#ff7070ꜱᴘᴀᴡɴᴇʀꜱ:'
+      - '  &#f8f8ff•  ᴛᴏᴛᴀʟ: &#ff5252%total%'
+      - '  &#f8f8ff•  ꜱᴛᴀᴄᴋᴇᴅ: &#ff5252%total_stacked%'
+      - ''
+      - '&#e63939⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ ꜱᴘᴀᴡɴᴇʀꜱ'
+  end:
+    name: '&#d8c5ffᴛʜᴇ ᴇɴᴅ'
+    lore:
+      - ''
+      - '&#7b68ee◈ &#a885fcꜱᴘᴀᴡɴᴇʀꜱ:'
+      - '  &#f8f8ff•  ᴛᴏᴛᴀʟ: &#c2a8fc%total%'
+      - '  &#f8f8ff•  ꜱᴛᴀᴄᴋᴇᴅ: &#c2a8fc%total_stacked%'
+      - ''
+      - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ ꜱᴘᴀᴡɴᴇʀꜱ'
+  custom_overworld:
+    name: '&#37eb9a%world_name%'
+    lore:
+      - ''
+      - '&#2cc483◈ &#48e89bꜱᴘᴀᴡɴᴇʀꜱ:'
+      - '  &#f8f8ff•  ᴛᴏᴛᴀʟ: &#37eb9a%total%'
+      - '  &#f8f8ff•  ꜱᴛᴀᴄᴋᴇᴅ: &#37eb9a%total_stacked%'
+      - ''
+      - '&#2cc483⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ ꜱᴘᴀᴡɴᴇʀꜱ'
+  custom_nether:
+    name: '&#ff5252%world_name%'
+    lore:
+      - ''
+      - '&#e63939◈ &#ff7070ꜱᴘᴀᴡɴᴇʀꜱ:'
+      - '  &#f8f8ff•  ᴛᴏᴛᴀʟ: &#ff5252%total%'
+      - '  &#f8f8ff•  ꜱᴛᴀᴄᴋᴇᴅ: &#ff5252%total_stacked%'
+      - ''
+      - '&#e63939⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ ꜱᴘᴀᴡɴᴇʀꜱ'
+  custom_end:
+    name: '&#d8c5ff%world_name%'
+    lore:
+      - ''
+      - '&#7b68ee◈ &#a885fcꜱᴘᴀᴡɴᴇʀꜱ:'
+      - '  &#f8f8ff•  ᴛᴏᴛᴀʟ: &#c2a8fc%total%'
+      - '  &#f8f8ff•  ꜱᴛᴀᴄᴋᴇᴅ: &#c2a8fc%total_stacked%'
+      - ''
+      - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ ꜱᴘᴀᴡɴᴇʀꜱ'
+  custom_default:
+    name: '&#ab7afd%world_name%'
+    lore:
+      - ''
+      - '&#7b68ee◈ &#a885fcꜱᴘᴀᴡɴᴇʀꜱ:'
+      - '  &#f8f8ff•  ᴛᴏᴛᴀʟ: &#c2a8fc%total%'
+      - '  &#f8f8ff•  ꜱᴛᴀᴄᴋᴇᴅ: &#c2a8fc%total_stacked%'
+      - ''
+      - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ ꜱᴘᴀᴡɴᴇʀꜱ'
+
+# Spawner List GUI
+gui_title_spawner_list: '%world% - [%current%/%total%]'
+
+filter:
+  button:
+    name: '&#37eb9aꜰɪʟᴛᴇʀ sᴘᴀᴡɴᴇʀs'
+    lore:
+      - '%all_color% • ᴀʟʟ'
+      - '%active_color% • ᴀᴄᴛɪᴠᴇ'
+      - '%inactive_color% • ɪɴᴀᴄᴛɪᴠᴇ'
+  all:
+    color: '&#37eb9a'
+  active:
+    color: '&a'
+  inactive:
+    color: '&#ff5252'
+
+sort:
+  button:
+    name: '&#37eb9aꜱᴏʀᴛ ꜱᴘᴀᴡɴᴇʀꜱ'
+    lore:
+      - '%default_color% • ᴅᴇꜰᴀᴜʟᴛ (ɪᴅ)'
+      - '%stack_size_asc_color% • ꜱᴛᴀᴄᴋ ꜱɪᴢᴇ (↑)'
+      - '%stack_size_desc_color% • ꜱᴛᴀᴄᴋ ꜱɪᴢᴇ (↓)'
+  default:
+    color: '&#37eb9a'
+  stack_size_asc:
+    color: '&#37eb9a'
+  stack_size_desc:
+    color: '&#37eb9a'
+
+spawner_item_list:
+  name: '&#ab7afdꜱᴘᴀᴡɴᴇʀ #%id%'
+  lore:
+    - '&#7b68ee⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    - '&#7b68ee◈ &#a885fcᴅᴇᴛᴀɪʟꜱ:'
+    - '  &#f8f8ff•  ᴇɴᴛɪᴛʏ: &#c2a8fc%entity%'
+    - '  &#f8f8ff•  ꜱᴛᴀᴄᴋ: &#c2a8fc%size%'
+    - '  &#f8f8ff•  ꜱᴛᴀᴛᴜꜱ: %status_color%%status_text%'
+    - '  &#f8f8ff•  ʟᴏᴄᴀᴛɪᴏɴ: &#c2a8fcx: %x%, ʏ: %y%, ᴢ: %z%'
+    - '&#7b68ee⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
+    - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴛᴇʟᴇᴘᴏʀᴛ ᴛᴏ ꜱᴘᴀᴡɴᴇʀ'
+
+navigation:
+  previous_page: '&#37eb9aᴘʀᴇᴠɪᴏᴜꜱ ᴘᴀɢᴇ'
+  next_page: '&#37eb9aɴᴇxᴛ ᴘᴀɢᴇ'
+  back: '&#ff5252ʙᴀᴄᴋ ᴛᴏ ᴡᴏʀʟᴅ ꜱᴇʟᴇᴄᴛɪᴏɴ'
+  close: '&#ff5252ᴄʟᴏꜱᴇ'
+  page_indicator: '&#fce96aᴘᴀɢᴇ %current_page%/%total_pages%'
+
+# ---------------------------------------------------
+#                  Prices GUI
+# ---------------------------------------------------
+prices_gui_title: 'ɪᴛᴇᴍ ꜱᴇʟʟ ᴘʀɪᴄᴇꜱ (ᴘᴀɢᴇ %current_page%/%total_pages%)'
+
+price_item:
+  name: '&#fce96a%item_name%'
+  lore:
+    - ''
+    - '&#d9b50c◈ &#fce96aᴘʀɪᴄᴇ ɪɴꜰᴏ:'
+    - '  &#f8f8ff•  ꜰɪɴᴀʟ ᴘʀɪᴄᴇ: &#37eb9a$%price%'
+    - '  &#f8f8ff•  ꜱᴏᴜʀᴄᴇ: &#c2a8fc%price_source%'
+    - ''
+    - '&#d9b50c◈ &#fce96aᴅᴇᴛᴀɪʟᴇᴅ ᴘʀɪᴄᴇꜱ:'
+    - '  &#f8f8ff•  ᴄᴜꜱᴛᴏᴍ: &#37eb9a$%custom_price%'
+    - '  &#f8f8ff•  ꜱʜᴏᴘ: &#37eb9a$%shop_price%'
+
+# Spawner Management GUI
+spawner_management:
+  title: 'ᴍᴀɴᴀɢᴇ ꜱᴘᴀᴡɴᴇʀ'
+  
+  teleport:
+    name: '&#00E689➤ &#f8f8ffᴛᴇʟᴇᴘᴏʀᴛ'
+    lore:
+      - '&#7b68eeᴛᴇʟᴇᴘᴏʀᴛ ᴛᴏ ᴛʜɪꜱ ꜱᴘᴀᴡɴᴇʀ'
+      - ''
+      - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴛᴇʟᴇᴘᴏʀᴛ'
+  
+  open_spawner:
+    name: '&#fce96a⚙ &#f8f8ffᴏᴘᴇɴ ꜱᴘᴀᴡɴᴇʀ ᴍᴇɴᴜ'
+    lore:
+      - '&#7b68eeᴏᴘᴇɴ ᴛʜᴇ ꜱᴘᴀᴡɴᴇʀ ɢᴜɪ ᴅɪʀᴇᴄᴛʟʏ'
+      - ''
+      - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+  
+  stack:
+    name: '&#37eb9a⚡ &#f8f8ffꜱᴛᴀᴄᴋ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ'
+    lore:
+      - '&#7b68eeᴏᴘᴇɴ ᴀᴅᴍɪɴ ꜱᴛᴀᴄᴋɪɴɢ ᴄᴏɴᴛʀᴏʟꜱ'
+      - '&#7b68eeɪɴᴄʀᴇᴀꜱᴇ ᴏʀ ᴅᴇᴄʀᴇᴀꜱᴇ ꜱᴛᴀᴄᴋ ꜱɪᴢᴇ'
+      - ''
+      - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+  
+  remove:
+    name: '&#ff5252✗ &#f8f8ffʀᴇᴍᴏᴠᴇ ꜱᴘᴀᴡɴᴇʀ'
+    lore:
+      - '&#ff5252⚠ ᴄᴏᴍᴘʟᴇᴛᴇʟʏ ʀᴇᴍᴏᴠᴇ ᴛʜɪꜱ ꜱᴘᴀᴡɴᴇʀ'
+      - '&#ff5252ᴛʜɪꜱ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ʙʟᴏᴄᴋ ᴀɴᴅ ᴀʟʟ ᴅᴀᴛᴀ'
+      - ''
+      - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ʀᴇᴍᴏᴠᴇ'
+  
+  back:
+    name: '&#ff5252◄ &#f8f8ffʙᴀᴄᴋ'
+    lore:
+      - '&#7b68eeʀᴇᴛᴜʀɴ ᴛᴏ ꜱᴘᴀᴡɴᴇʀ ʟɪꜱᴛ'
+      - ''
+      - '&#7b68ee⊳ &#f8f8ffᴄʟɪᴄᴋ ᴛᴏ ɢᴏ ʙᴀᴄᴋ'

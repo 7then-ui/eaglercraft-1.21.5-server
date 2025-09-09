@@ -1,0 +1,51 @@
+mob1:
+  type: ZOMBIE
+  name: '&dEzMobsEditor Zombie!'
+  maxhealth: 40.0
+  speed: 0.3
+  attackdamage: 5.0
+  attackspeed: 25.0
+  items:
+    head:
+      item: DIAMOND_HELMET
+      ENCHANTMENTS:
+        UNBREAKING: 3
+      name: '&cAwesomeHelmet'
+    chest:
+      item: DIAMOND_CHESTPLACE
+      ENCHANTMENTS:
+        UNBREAKING: 3
+      name: '&cChestplate'
+    legs:
+      item: DIAMOND_LEGGINGS
+      ENCHANTMENTS:
+        UNBREAKING: 3
+      name: '&cAwesomeLeggings'
+    feet:
+      item: DIAMOND_BOOTS
+      ENCHANTMENTS:
+        UNBREAKING: 3
+      name: '&cBooties'
+    hand1:
+      item: DIAMOND_SWORD
+      ENCHANTMENTS:
+        UNBREAKING: 3
+      name: '&cAwesome_SWORD'
+mob2:
+  type: SKELETON
+  name: '&dEzMobsEditor Skeleton!'
+  maxhealth: 40.0
+  speed: 0.3
+  attackdamage: 5.0
+  attackspeed: 25.0
+  items:
+    head:
+      item: DIAMOND_HELMET
+      ENCHANTMENTS:
+        UNBREAKING: 3
+      name: '&cAwesomeHelmet'
+    hand1:
+      item: DIAMOND_SWORD
+      ENCHANTMENTS:
+        UNBREAKING: 3
+      name: '&cAwesome_SWORD'

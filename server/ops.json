@@ -1,5 +1,11 @@
 [
   {
+    "uuid": "4fa24d66-b50b-3b99-9637-41e1e51e18ff",
+    "name": "syncronized",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "558b0c4f-fe5f-3741-9bed-25373ea9dd63",
     "name": "L6_",
     "level": 4,
